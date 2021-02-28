@@ -4,39 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="shortcut icon" href="img/poto.png">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href="css/normalize.css">
         <link rel='stylesheet' href="css/styles.css">
         <title>Pokedex</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <a class="logo" href="#" >Pokedex</a>
-                <nav class="nav_links">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">pokedex</a>
-                        </li>
-                        <li>
-                            <a href="#">about</a>
-                        </li>
-                    </ul>
-                </nav>
-            </nav>
-        </header>
-        <div class="container-content">
-            <div class="main-info">
-                <h2>The Pokedex</h2>
-                <div class="main-info-xd">
-                    <p>An <b>open source project</b>, a pokedex with which you can search for your favorite pokemon.</p>
+        <nav class="navbar">
+            <div class="navbar__inner">
+                <button type="button" class="navbar__btn-toggle">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 16"
+                            fill="none" 
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path 
+                                fill-rule="evenodd"
+                                clip-rule="evenodd" 
+                                d="M24 3.5H0V0.5H24V3.5ZM24 9.5H0V6.5H24V9.5ZM0 15.5H24V12.5H0V15.5Z" 
+                                fill="white"
+                            />
+                        </svg>
+                </button>
+                <div class="navbar__items">
+                    <a class="navbar__title" href="#">Pokedex.</a>
+                </div>
+                <div class="navbar__items navbar__items--end">
+                    <a href="#" class="navbar__item navbar__link navbar__link--active" >Home</a>
+                    <a href="#" class="navbar__item navbar__link" >Pokedex</a>
+                    <a href="#" class="navbar__item navbar__link" >About</a>
+                    <a 
+                        href="https://github.com/jairosalinas220/pokedex" 
+                        role="button" 
+                        class="button" 
+                        target="_blank"
+                    >GitHub</a>
                 </div>
             </div>
-            <div class="img-content">
-                <img src="img/pikachu.png" alt="pikachu"/>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="container">
+                    <h1 class="container__title">The Pokedex</h1>
+                    <div class="container__paragraph">
+                        <p class="container__paragraph--text">
+                            An <b>open source project</b>, a pokedex with which you can search for your favorite pokemon.
+                        </p>
+                    </div>
+                </div>
+                <img src="img/Pikachu.png" alt="pikachu" class="mockup"/>
             </div>
-        </div>
+        </main>
+        <script src="js/index.js"></script>
     </body>
 </html>
