@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="shortcut icon" href="img/poto.png">
+        <link rel="shortcut icon" href="img/pokeball.png">
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap" rel="stylesheet">
         <link rel='stylesheet' href="css/normalize.css">
         <link rel='stylesheet' href="css/styles.css">
         <title>Pokedex</title>
@@ -13,24 +15,21 @@
     <body>
         <nav class="navbar">
             <div class="navbar__inner">
-                <button type="button" class="navbar__btn-toggle">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 16"
-                            fill="none" 
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path 
-                                fill-rule="evenodd"
-                                clip-rule="evenodd" 
-                                d="M24 3.5H0V0.5H24V3.5ZM24 9.5H0V6.5H24V9.5ZM0 15.5H24V12.5H0V15.5Z" 
-                                fill="white"
-                            />
-                        </svg>
-                </button>
                 <div class="navbar__items">
                     <a class="navbar__title" href="#">Pokedex.</a>
+                    <button type="button" class="navbar__btn-toggle">
+                        <svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 24 16"
+                        >
+                            <path 
+                                d="M4 
+                                3.5H0V0.5H24V3.5ZM24 9.5H0V6.5H24V9.5ZM0 15.5H24V12.5H0V15.5Z" 
+                                fill="white"
+                            ></path>
+                        </svg>
+                    </button>
                 </div>
                 <div class="navbar__items navbar__items--end">
                     <a href="#" class="navbar__item navbar__link navbar__link--active" >Home</a>
@@ -44,20 +43,31 @@
                     >GitHub</a>
                 </div>
             </div>
+            <div class="navbar__background"></div>
+            <div class="navbar__sidebar">
+                <div class="navbar__sidebar-logo">
+                    <a class="navbar__sidebar-title" href="#">Pokedex.</a>
+                </div>
+                <div class="navbar__sidebar-items">
+                    <div class="menu">
+                        <a href="#" class="menu__item">Home</a>
+                        <a href="#" class="menu__item">Pokedex</a>
+                        <a href="#" class="menu__item">About</a>
+                    </div>
+                </div>
+            </div>
         </nav>
         <main>
             <div class="main">
                 <div class="container">
                     <h1 class="container__title">The Pokedex</h1>
-                    <div class="container__paragraph">
-                        <p class="container__paragraph--text">
+                        <p class="container__paragraph">
                             An <b>open source project</b>, a pokedex with which you can search for your favorite pokemon.
                         </p>
-                    </div>
                 </div>
-                <img src="img/Pikachu.png" alt="pikachu" class="mockup"/>
+                <img src="img/pikachu.png" alt="pikachu" class="mockup"/>
             </div>
         </main>
-        <script src="js/index.js"></script>
+        <script src="js/index.js" type="text/javascript"></script>
     </body>
 </html>
