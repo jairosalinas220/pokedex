@@ -196,14 +196,16 @@
         display: block;
     }
     .main {
+        flex-wrap: nowrap;
         flex-direction: column-reverse;
-        height: auto;
+        justify-content: center;
+        margin-bottom: 100px;
     }
     .container__title, .container__paragraph {
         text-align: center;
     }
     .mockup {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         width: 60%;
         height: auto;
     }
